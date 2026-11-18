@@ -1,0 +1,10 @@
+# 1 Build
+```bash
+cd ./participant
+docker build -t go1-participant:local .
+```
+
+# 2 Test ping
+```bash
+docker run --rm go1-participant:local ping
+```
