@@ -131,7 +131,7 @@ class StateListener(Node):
             return
         elapsed = self.get_clock().now() - self.last_cmd_time
         elapsed_sec = elapsed.nanoseconds / 10 ** 9
-        if elapsed_sec < 0.5:
+        if elapsed_sec < 0.45:
             self.lowcmd_publisher.publish(self.last_safe_cmd)
         else:
             cmd_cpy = deepcopy(self.last_safe_cmd)
