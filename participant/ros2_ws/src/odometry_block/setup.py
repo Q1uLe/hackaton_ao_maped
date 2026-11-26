@@ -17,13 +17,9 @@ setup(
     maintainer_email='sar1p013pehat@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
     entry_points={
         'console_scripts': [
+           'odometry = odometry_block.odometry:main', 
         ],
     },
 )
