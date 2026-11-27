@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ "$1" == "ping" ]]; then
- echo '{"protocol_version": "1.0", "supported_tasks": ["T2", "T3", "T4"], "self_trained_rl": true, "preferred_speed_mps": 0.6}'
+ echo '{"protocol_version": "1.0", "supported_tasks": ["T2", "T3", "T4", "T5"], "self_trained_rl": true, "preferred_speed_mps": 0.6}'
 elif [[ "$1" == "T2" ]]; then
     source /opt/ros/humble/setup.bash
     source /opt/participant/ros2_ws/install/setup.bash
