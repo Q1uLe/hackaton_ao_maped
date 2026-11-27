@@ -1,0 +1,17 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <RecoveryNode number_of_retries="6" name="NavigateWithReplanning">
+      <PipelineSequence name="PlanAndFollow">
+        <RateController hz="1.0">
+          <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+        </RateController>
+        <FollowPath path="{path}" controller_id="FollowPath" goal_checker_id="goal_checker"/>
+      </PipelineSequence>
+      <RoundRobin name="RecoveryActions">
+        <Wait wait_duration="1.5"/>
+        <Spin spin_dist="0.65" time_allowance="6.0"/>
+        <BackUp backup_dist="0.18" backup_speed="0.10" time_allowance="5.0"/>
+      </RoundRobin>
+    </RecoveryNode>
+  </BehaviorTree>
+</root>

@@ -14,6 +14,11 @@ COPY t3/weights/ t3/weights/
 COPY t3/licenses/ t3/licenses/
 COPY t3/submission.json t3/submission.json
 WORKDIR /opt/participant/ros2_ws
+RUN apt-get install -y --no-install-recommends \
+    ros-humble-navigation2 \
+    ros-humble-slam-toolbox \
+    ros-humble-cv-bridge \
+    python3-opencv
 RUN source /opt/ros/humble/setup.bash && colcon build
 RUN useradd -m participant
 USER participant
