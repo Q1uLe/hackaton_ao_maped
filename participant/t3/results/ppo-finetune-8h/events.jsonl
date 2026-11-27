@@ -1,0 +1,77 @@
+{"utc": "2026-11-26T10:41:05.447749+00:00", "event": "baseline", "score": [6, 4, -7.528941666666666]}
+{"utc": "2026-11-26T10:42:28.532450+00:00", "event": "validation", "steps": 55296, "score": [6, 4, -7.8776375000000005], "best_steps": 0, "improved": false}
+{"utc": "2026-11-26T10:49:41.146424+00:00", "event": "validation", "steps": 380928, "score": [6, 4, -7.605612499999999], "best_steps": 0, "improved": false}
+{"utc": "2026-11-26T10:56:53.363956+00:00", "event": "validation", "steps": 703488, "score": [6, 4, -7.5000833333333325], "best_steps": 703488, "improved": true}
+{"utc": "2026-11-26T11:04:07.468890+00:00", "event": "validation", "steps": 1032192, "score": [6, 4, -6.089737500000001], "best_steps": 1032192, "improved": true}
+{"utc": "2026-11-26T11:11:22.196178+00:00", "event": "validation", "steps": 1354752, "score": [6, 4, -6.746620833333332], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T11:18:35.207412+00:00", "event": "validation", "steps": 1677312, "score": [6, 4, -6.310133333333333], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T11:25:47.888585+00:00", "event": "validation", "steps": 2002944, "score": [6, 4, -6.5852375], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T11:33:00.409357+00:00", "event": "validation", "steps": 2325504, "score": [6, 4, -7.0991], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T11:40:13.506366+00:00", "event": "rollback", "reason": "validation_regression", "steps": 2651136, "best_steps": 1032192, "lr": 8.4e-05}
+{"utc": "2026-11-26T11:40:13.507462+00:00", "event": "validation", "steps": 2651136, "score": [6, 4, -6.705800000000001], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T11:47:26.720923+00:00", "event": "validation", "steps": 2973696, "score": [6, 4, -7.251354166666667], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T11:54:38.497601+00:00", "event": "rollback", "reason": "validation_regression", "steps": 3296256, "best_steps": 1032192, "lr": 5.879999999999999e-05}
+{"utc": "2026-11-26T11:54:38.505312+00:00", "event": "validation", "steps": 3296256, "score": [6, 4, -7.749791666666666], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T12:01:52.822817+00:00", "event": "validation", "steps": 3621888, "score": [6, 4, -6.721670833333334], "best_steps": 1032192, "improved": false}
+{"utc": "2026-11-26T12:09:04.981371+00:00", "event": "validation", "steps": 3944448, "score": [6, 4, -5.923279166666667], "best_steps": 3944448, "improved": true}
+{"utc": "2026-11-26T12:16:18.732400+00:00", "event": "validation", "steps": 4267008, "score": [6, 4, -6.477529166666666], "best_steps": 3944448, "improved": false}
+{"utc": "2026-11-26T12:23:30.820319+00:00", "event": "validation", "steps": 4589568, "score": [6, 4, -6.1008000000000004], "best_steps": 3944448, "improved": false}
+{"utc": "2026-11-26T12:30:41.886617+00:00", "event": "validation", "steps": 4909056, "score": [6, 4, -5.687004166666666], "best_steps": 4909056, "improved": true}
+{"utc": "2026-11-26T12:37:53.350715+00:00", "event": "validation", "steps": 5231616, "score": [6, 4, -5.939212499999999], "best_steps": 4909056, "improved": false}
+{"utc": "2026-11-26T12:45:04.994046+00:00", "event": "validation", "steps": 5554176, "score": [6, 4, -5.639362500000001], "best_steps": 5554176, "improved": true}
+{"utc": "2026-11-26T12:52:17.017548+00:00", "event": "validation", "steps": 5876736, "score": [6, 4, -6.107316666666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T12:59:29.674855+00:00", "event": "validation", "steps": 6202368, "score": [6, 4, -6.1143], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:06:41.467593+00:00", "event": "validation", "steps": 6528000, "score": [6, 4, -5.849091666666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:13:54.757996+00:00", "event": "validation", "steps": 6853632, "score": [6, 4, -6.195379166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:21:07.786761+00:00", "event": "validation", "steps": 7179264, "score": [6, 4, -5.8922791666666665], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:28:19.038339+00:00", "event": "validation", "steps": 7504896, "score": [6, 4, -6.056312500000001], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:35:32.335151+00:00", "event": "validation", "steps": 7830528, "score": [6, 4, -5.953383333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:42:44.775508+00:00", "event": "validation", "steps": 8156160, "score": [6, 4, -5.746791666666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:49:56.311164+00:00", "event": "validation", "steps": 8481792, "score": [6, 4, -5.8797375], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T13:57:07.921325+00:00", "event": "validation", "steps": 8807424, "score": [6, 4, -5.8066625], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:04:22.938234+00:00", "event": "validation", "steps": 9136128, "score": [6, 4, -6.213354166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:11:36.459951+00:00", "event": "rollback", "reason": "validation_regression", "steps": 9464832, "best_steps": 5554176, "lr": 3.3751199999999996e-05}
+{"utc": "2026-11-26T14:11:36.461078+00:00", "event": "validation", "steps": 9464832, "score": [6, 4, -6.536458333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:18:49.854787+00:00", "event": "validation", "steps": 9790464, "score": [6, 4, -6.0531958333333336], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:26:02.754886+00:00", "event": "validation", "steps": 10116096, "score": [6, 4, -5.749970833333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:33:15.533277+00:00", "event": "validation", "steps": 10441728, "score": [6, 4, -5.693333333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:40:28.843875+00:00", "event": "validation", "steps": 10767360, "score": [6, 4, -5.816300000000001], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:47:42.856548+00:00", "event": "validation", "steps": 11096064, "score": [6, 4, -6.296775], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T14:54:55.528614+00:00", "event": "rollback", "reason": "validation_regression", "steps": 11424768, "best_steps": 5554176, "lr": 2.5e-05}
+{"utc": "2026-11-26T14:54:55.536119+00:00", "event": "validation", "steps": 11424768, "score": [6, 4, -6.200758333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:02:10.135771+00:00", "event": "validation", "steps": 11750400, "score": [6, 4, -5.643608333333334], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:09:22.990055+00:00", "event": "validation", "steps": 12076032, "score": [6, 4, -5.687979166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:16:34.598822+00:00", "event": "validation", "steps": 12401664, "score": [6, 4, -6.483729166666666], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:23:46.100363+00:00", "event": "rollback", "reason": "validation_regression", "steps": 12724224, "best_steps": 5554176, "lr": 2.5e-05}
+{"utc": "2026-11-26T15:23:46.101180+00:00", "event": "validation", "steps": 12724224, "score": [6, 4, -6.40095], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:30:57.600455+00:00", "event": "validation", "steps": 13049856, "score": [6, 4, -5.938725], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:38:11.886452+00:00", "event": "validation", "steps": 13375488, "score": [6, 4, -5.893679166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:45:24.216379+00:00", "event": "validation", "steps": 13701120, "score": [6, 4, -5.8011875], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:52:36.490789+00:00", "event": "validation", "steps": 14026752, "score": [6, 4, -6.2900833333333335], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T15:59:49.964334+00:00", "event": "validation", "steps": 14352384, "score": [6, 4, -6.020120833333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:07:02.489125+00:00", "event": "validation", "steps": 14681088, "score": [6, 4, -6.026583333333332], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:14:14.223670+00:00", "event": "validation", "steps": 15009792, "score": [6, 4, -6.0049166666666665], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:21:28.201246+00:00", "event": "validation", "steps": 15335424, "score": [6, 4, -5.964308333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:28:42.858177+00:00", "event": "validation", "steps": 15664128, "score": [6, 4, -5.888775], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:35:58.702038+00:00", "event": "validation", "steps": 15992832, "score": [6, 4, -6.009604166666666], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:43:12.820907+00:00", "event": "validation", "steps": 16318464, "score": [6, 4, -6.139612499999999], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:50:26.885923+00:00", "event": "rollback", "reason": "validation_regression", "steps": 16647168, "best_steps": 5554176, "lr": 2.5e-05}
+{"utc": "2026-11-26T16:50:26.893347+00:00", "event": "validation", "steps": 16647168, "score": [6, 4, -6.194283333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T16:57:39.572066+00:00", "event": "validation", "steps": 16972800, "score": [6, 4, -6.392641666666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:04:52.498466+00:00", "event": "rollback", "reason": "validation_regression", "steps": 17298432, "best_steps": 5554176, "lr": 2.5e-05}
+{"utc": "2026-11-26T17:04:52.506065+00:00", "event": "validation", "steps": 17298432, "score": [6, 4, -6.673654166666666], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:12:03.496929+00:00", "event": "validation", "steps": 17574912, "score": [6, 4, -5.703270833333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:19:14.943660+00:00", "event": "validation", "steps": 17897472, "score": [6, 4, -5.9775625], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:26:28.156168+00:00", "event": "validation", "steps": 18220032, "score": [6, 4, -5.718054166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:33:42.425845+00:00", "event": "validation", "steps": 18545664, "score": [6, 4, -5.990883333333334], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:40:54.653944+00:00", "event": "validation", "steps": 18871296, "score": [6, 4, -5.85365], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:48:06.472600+00:00", "event": "validation", "steps": 19196928, "score": [6, 4, -5.763304166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T17:55:20.961463+00:00", "event": "validation", "steps": 19525632, "score": [6, 4, -5.792137500000001], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:02:33.500188+00:00", "event": "validation", "steps": 19851264, "score": [6, 4, -5.827695833333332], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:09:46.924599+00:00", "event": "validation", "steps": 20176896, "score": [6, 4, -5.863229166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:17:00.561417+00:00", "event": "validation", "steps": 20505600, "score": [6, 4, -5.832208333333333], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:24:14.988259+00:00", "event": "validation", "steps": 20834304, "score": [6, 4, -5.8919625], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:31:28.349099+00:00", "event": "validation", "steps": 21159936, "score": [6, 4, -5.939887499999999], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:38:41.641048+00:00", "event": "validation", "steps": 21485568, "score": [6, 4, -5.848654166666667], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:40:58.422433+00:00", "event": "validation", "steps": 21580800, "score": [6, 4, -6.009495833333334], "best_steps": 5554176, "improved": false}
+{"utc": "2026-11-26T18:42:19.277560+00:00", "event": "complete", "steps": 21583374, "best_steps": 5554176, "improved": true}

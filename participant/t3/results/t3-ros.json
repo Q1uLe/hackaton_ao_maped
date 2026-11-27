@@ -1,0 +1,69 @@
+{
+  "participant_image": "go1-t3:local",
+  "participant_image_id": "sha256:0a809e7084b6be134e08c4e2a9305d3cfd928a0ff405a5637545134c8e315a80",
+  "archive_sha256": "5fe6dc22e11e3a7fb543b93630195bb03a3cd85fd1e41c58ef87b61ca71dd515",
+  "archive_bytes": 345527516,
+  "platform": "linux/amd64",
+  "ubuntu_version": "22.04",
+  "container_uid": 10001,
+  "simulator_image": "registry.cookcloud.ru/go1-hackathon-remote-stage/go1-sim:v1.0",
+  "simulator_registry_digest": "sha256:c79ddbece6cc7d00f114a9a9a09be0bae061ebb35ca722bcbe51bf75fce1b2e3",
+  "model_sha256": "d5a7466784c8e72fd174cc7fa5a92754a1a0a6d458a1dec79e7ca0abc9525c4a",
+  "host_environment": "Ubuntu 22.04 guest on Windows, QEMU TCG software emulation",
+  "transport": "ROS 2 Humble, CycloneDDS, host networking, separate participant/simulator/driver containers",
+  "ping_network_none": {
+    "protocol_version": "1.0",
+    "supported_tasks": ["T3"],
+    "self_trained_rl": true,
+    "preferred_speed_mps": 0.6
+  },
+  "episodes": [
+    {
+      "sim_realtime_factor": 1.0,
+      "wall_timeout_s": 150,
+      "archive_export_concurrent": true,
+      "success": false,
+      "fallen": false,
+      "distance_m": 0.169,
+      "lateral_m": -0.0066,
+      "scored_seconds": 51.824,
+      "min_height_m": 0.2181,
+      "bare_commands": 113,
+      "safe_commands": 326,
+      "mean_command_hz": 6.29,
+      "max_command_interval_s": 0.452,
+      "errors": []
+    },
+    {
+      "sim_realtime_factor": 0.1,
+      "wall_timeout_s": 240,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0041,
+      "lateral_m": -0.2847,
+      "scored_seconds": 7.52,
+      "min_height_m": 0.2525,
+      "bare_commands": 449,
+      "safe_commands": 675,
+      "mean_command_hz": 89.76,
+      "max_command_interval_s": 0.036,
+      "errors": []
+    },
+    {
+      "sim_realtime_factor": 1.0,
+      "wall_timeout_s": 150,
+      "archive_export_concurrent": false,
+      "success": false,
+      "fallen": false,
+      "distance_m": 0.2607,
+      "lateral_m": 0.0369,
+      "scored_seconds": 69.462,
+      "min_height_m": 0.2008,
+      "bare_commands": 159,
+      "safe_commands": 497,
+      "mean_command_hz": 7.15,
+      "max_command_interval_s": 0.354,
+      "errors": []
+    }
+  ]
+}

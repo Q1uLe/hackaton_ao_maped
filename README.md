@@ -1,3 +1,7 @@
+# T3. Ходьба Go1 с RL-политикой
+
+Общий образ из `participant/Dockerfile` поддерживает T2, T3 и T4. Код, веса и результаты T3 находятся в `participant/t3/`. [Запуск, тесты и сдача T3](participant/t3/README.md)
+
 # 1 Build
 ```bash
 cd ./participant

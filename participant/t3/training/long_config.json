@@ -1,0 +1,22 @@
+{
+  "seed": 11262026,
+  "workers": 6,
+  "rollout_steps": 512,
+  "batch_size": 768,
+  "epochs": 5,
+  "learning_rate": 0.00012,
+  "min_learning_rate": 0.000025,
+  "gamma": 0.992,
+  "gae_lambda": 0.95,
+  "clip_range": 0.15,
+  "target_kl": 0.015,
+  "initial_log_std": -1.55,
+  "command_min_mps": 0.38,
+  "command_max_mps": 0.6,
+  "episode_seconds": 12.0,
+  "starting_difficulty": 0.2,
+  "max_difficulty": 0.85,
+  "early_validation_s": 80,
+  "validation_interval_s": 420,
+  "checkpoint_interval_s": 240
+}
