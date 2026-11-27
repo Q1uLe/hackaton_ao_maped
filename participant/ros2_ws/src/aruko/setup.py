@@ -1,3 +1,5 @@
+from glob import glob
+
 from setuptools import find_packages, setup
 
 package_name = 'aruko'
@@ -10,20 +12,21 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', glob('launch/*.launch.py')),
+        ('share/' + package_name + '/config', glob('config/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='q1ule',
     maintainer_email='sar1p013pehat@gmail.com',
-    description='TODO: Package description',
+    description='T5 navigation and ArUco detection',
     license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
     entry_points={
         'console_scripts': [
+            'detector = aruko.detector:main',
+            'course_odometry = aruko.course_odometry:main',
+            'scan_filter = aruko.scan_filter:main',
+            'planning_map = aruko.planning_map:main',
         ],
     },
 )

@@ -9,5 +9,9 @@ elif [[ "$1" == "T4" ]]; then
     source /opt/ros/humble/setup.bash
     source /opt/participant/ros2_ws/install/setup.bash
     exec ros2 run odometry_block odometry --ros-args -p use_sim_time:=true
+elif [[ "$1" == "T5" ]]; then
+    source /opt/ros/humble/setup.bash
+    source /opt/participant/ros2_ws/install/setup.bash
+    exec ros2 launch aruko t5.launch.py
 fi
 
