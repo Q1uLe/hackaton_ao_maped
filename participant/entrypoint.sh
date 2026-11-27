@@ -9,6 +9,7 @@ elif [[ "$1" == "T3" ]]; then
     source /opt/ros/humble/setup.bash
     source /opt/participant/ros2_ws/install/setup.bash
     cd /opt/participant/t3 || exit 1
+    export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
     exec python3 -m go1_t3.ros_nodes "${@:2}"
 elif [[ "$1" == "T4" ]]; then
     source /opt/ros/humble/setup.bash
