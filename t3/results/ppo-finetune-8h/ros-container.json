@@ -1,0 +1,34 @@
+{
+  "participant_image": "go1-t3:cuda-finetuned",
+  "participant_image_id": "sha256:3e7db4fc6c15f20b3c29ac08ec7f592467715055d5d6f0cb9834d95a8a8fcb84",
+  "platform": "linux/amd64",
+  "container_user": "10001:10001",
+  "residual_sha256": "05f2969c0457c03788cbc0961d2d45e65080aa35e587f5bb4824dc843ed62791",
+  "simulator_image": "registry.cookcloud.ru/go1-hackathon-remote-stage/go1-sim:v1.0",
+  "simulator_registry_digest": "sha256:c79ddbece6cc7d00f114a9a9a09be0bae061ebb35ca722bcbe51bf75fce1b2e3",
+  "host_environment": "Ubuntu 22.04 guest on Windows, QEMU TCG software emulation",
+  "sim_realtime_factor": 0.1,
+  "ping_network_none": {
+    "protocol_version": "1.0",
+    "supported_tasks": [
+      "T3"
+    ],
+    "self_trained_rl": true,
+    "preferred_speed_mps": 0.6
+  },
+  "episode": {
+    "success": true,
+    "fallen": false,
+    "distance_m": 3.0026,
+    "lateral_m": 0.4688,
+    "scored_seconds": 6.228,
+    "min_height_m": 0.2212,
+    "bare_commands": 386,
+    "safe_commands": 562,
+    "mean_command_hz": 90.24,
+    "max_command_interval_s": 0.026,
+    "errors": []
+  },
+  "archive_sha256": "2f025369cff4e616b1b7d567ebab352e7aa6d3194ae678cc7cd4b60367e0753d",
+  "archive_bytes": 345530383
+}

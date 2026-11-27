@@ -1,0 +1,132 @@
+{
+  "nominal_successes": 6,
+  "nominal_total": 6,
+  "perturbed_successes": 4,
+  "perturbed_total": 4,
+  "median_nominal_seconds": 6.529999999999999,
+  "mean_abs_nominal_lateral_m": 0.12866666666666668,
+  "mean_abs_perturbed_lateral_m": 0.32284999999999997,
+  "cost": 7.528941666666666,
+  "episodes": [
+    {
+      "scenario": "nominal",
+      "seed": 625000,
+      "speed_mps": 0.6,
+      "warmup_walk": false,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0026,
+      "scored_seconds": 6.55,
+      "lateral_m": -0.0054,
+      "min_height_m": 0.2529
+    },
+    {
+      "scenario": "nominal",
+      "seed": 625001,
+      "speed_mps": 0.6,
+      "warmup_walk": false,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0028,
+      "scored_seconds": 6.55,
+      "lateral_m": -0.0185,
+      "min_height_m": 0.2528
+    },
+    {
+      "scenario": "nominal",
+      "seed": 625002,
+      "speed_mps": 0.6,
+      "warmup_walk": false,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0026,
+      "scored_seconds": 6.54,
+      "lateral_m": -0.0442,
+      "min_height_m": 0.2534
+    },
+    {
+      "scenario": "warmup_walk",
+      "seed": 625033,
+      "speed_mps": 0.6,
+      "warmup_walk": true,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.003,
+      "scored_seconds": 6.52,
+      "lateral_m": -0.2696,
+      "min_height_m": 0.2519
+    },
+    {
+      "scenario": "warmup_walk",
+      "seed": 625034,
+      "speed_mps": 0.6,
+      "warmup_walk": true,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0006,
+      "scored_seconds": 6.51,
+      "lateral_m": -0.2439,
+      "min_height_m": 0.2522
+    },
+    {
+      "scenario": "warmup_walk",
+      "seed": 625035,
+      "speed_mps": 0.6,
+      "warmup_walk": true,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0042,
+      "scored_seconds": 6.51,
+      "lateral_m": -0.1904,
+      "min_height_m": 0.2514
+    },
+    {
+      "scenario": "perturbed",
+      "seed": 625070,
+      "speed_mps": 0.45,
+      "warmup_walk": true,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0002,
+      "scored_seconds": 8.43,
+      "lateral_m": -0.7251,
+      "min_height_m": 0.2506
+    },
+    {
+      "scenario": "perturbed",
+      "seed": 625071,
+      "speed_mps": 0.6,
+      "warmup_walk": false,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0025,
+      "scored_seconds": 7.09,
+      "lateral_m": -0.1475,
+      "min_height_m": 0.2527
+    },
+    {
+      "scenario": "perturbed",
+      "seed": 625072,
+      "speed_mps": 0.6,
+      "warmup_walk": true,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.002,
+      "scored_seconds": 6.01,
+      "lateral_m": -0.2768,
+      "min_height_m": 0.2505
+    },
+    {
+      "scenario": "perturbed",
+      "seed": 625073,
+      "speed_mps": 0.45,
+      "warmup_walk": false,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0039,
+      "scored_seconds": 8.46,
+      "lateral_m": -0.142,
+      "min_height_m": 0.2519
+    }
+  ]
+}

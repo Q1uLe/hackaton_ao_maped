@@ -1,0 +1,111 @@
+{
+  "preferred_speed_mps": 0.6,
+  "warmup_walk": false,
+  "residual": null,
+  "kp": 45.0,
+  "kd": 1.0,
+  "frequency_hz": 3.0,
+  "successes": 10,
+  "episodes": [
+    {
+      "episode": 1,
+      "seed": 32026,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.004,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0081,
+      "min_height_m": 0.2536
+    },
+    {
+      "episode": 2,
+      "seed": 32027,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0046,
+      "scored_seconds": 6.61,
+      "lateral_m": 0.0619,
+      "min_height_m": 0.2532
+    },
+    {
+      "episode": 3,
+      "seed": 32028,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0023,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0178,
+      "min_height_m": 0.2533
+    },
+    {
+      "episode": 4,
+      "seed": 32029,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.003,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0282,
+      "min_height_m": 0.2533
+    },
+    {
+      "episode": 5,
+      "seed": 32030,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0028,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0181,
+      "min_height_m": 0.2535
+    },
+    {
+      "episode": 6,
+      "seed": 32031,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0013,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0153,
+      "min_height_m": 0.2533
+    },
+    {
+      "episode": 7,
+      "seed": 32032,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0031,
+      "scored_seconds": 6.62,
+      "lateral_m": 0.023,
+      "min_height_m": 0.2532
+    },
+    {
+      "episode": 8,
+      "seed": 32033,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0041,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0088,
+      "min_height_m": 0.2534
+    },
+    {
+      "episode": 9,
+      "seed": 32034,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0036,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0152,
+      "min_height_m": 0.2533
+    },
+    {
+      "episode": 10,
+      "seed": 32035,
+      "success": true,
+      "fallen": false,
+      "distance_m": 3.0031,
+      "scored_seconds": 6.6,
+      "lateral_m": 0.0395,
+      "min_height_m": 0.2536
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "start_unix": 1795689647.238768,
+  "start_utc": "2026-11-26T10:40:47.238772+00:00",
+  "deadline_unix": 1795718447.238768,
+  "deadline_utc": "2026-11-26T18:40:47.238768+00:00",
+  "mode": "hybrid",
+  "base_weights_sha256": "1a4b67ab9c22b181637a17ece6f7c5a071da4c967450477dbba224aa09c6e6e3",
+  "initial_sha256": "357981d12c3feab5c94ea5ae257ee61bd25d32dd9474957fb9d44bce5c446ec4",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "torch_version": "2.11.0+cu130"
+}

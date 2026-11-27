@@ -1,0 +1,382 @@
+{
+  "training_seed": 60326,
+  "selected_steps": 20480,
+  "total_steps": 61440,
+  "python": "3.13.7",
+  "mujoco": "3.3.7",
+  "numpy": "2.4.2",
+  "stable_baselines3": "2.9.2",
+  "torch": "2.11.0+cu130",
+  "gymnasium": "1.4.0",
+  "checkpoint_validation": [
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": "residual_010240.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0,
+          "scored_seconds": 6.6,
+          "lateral_m": -0.0487,
+          "min_height_m": 0.2528
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0026,
+          "scored_seconds": 6.6,
+          "lateral_m": -0.0765,
+          "min_height_m": 0.253
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0026,
+          "scored_seconds": 6.6,
+          "lateral_m": -0.0306,
+          "min_height_m": 0.2529
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": "residual_020480.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0019,
+          "scored_seconds": 6.55,
+          "lateral_m": -0.0256,
+          "min_height_m": 0.2528
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0008,
+          "scored_seconds": 6.54,
+          "lateral_m": -0.0527,
+          "min_height_m": 0.253
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0006,
+          "scored_seconds": 6.54,
+          "lateral_m": -0.0063,
+          "min_height_m": 0.2529
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": "residual_030720.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0035,
+          "scored_seconds": 6.5,
+          "lateral_m": -0.0524,
+          "min_height_m": 0.2528
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0022,
+          "scored_seconds": 6.49,
+          "lateral_m": -0.0779,
+          "min_height_m": 0.253
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0024,
+          "scored_seconds": 6.49,
+          "lateral_m": -0.0335,
+          "min_height_m": 0.2529
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": "residual_040960.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0028,
+          "scored_seconds": 6.49,
+          "lateral_m": -0.0561,
+          "min_height_m": 0.2526
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.001,
+          "scored_seconds": 6.48,
+          "lateral_m": -0.0838,
+          "min_height_m": 0.2528
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0014,
+          "scored_seconds": 6.48,
+          "lateral_m": -0.0383,
+          "min_height_m": 0.2527
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": "residual_051200.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0029,
+          "scored_seconds": 6.47,
+          "lateral_m": -0.0722,
+          "min_height_m": 0.2522
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0051,
+          "scored_seconds": 6.47,
+          "lateral_m": -0.1016,
+          "min_height_m": 0.2524
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0007,
+          "scored_seconds": 6.46,
+          "lateral_m": -0.0535,
+          "min_height_m": 0.2522
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": "residual_061440.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0042,
+          "scored_seconds": 6.44,
+          "lateral_m": -0.1048,
+          "min_height_m": 0.2519
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0005,
+          "scored_seconds": 6.43,
+          "lateral_m": -0.1327,
+          "min_height_m": 0.2521
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0018,
+          "scored_seconds": 6.43,
+          "lateral_m": -0.0857,
+          "min_height_m": 0.252
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": false,
+      "residual": null,
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41000,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0002,
+          "scored_seconds": 6.6,
+          "lateral_m": 0.0242,
+          "min_height_m": 0.2532
+        },
+        {
+          "episode": 2,
+          "seed": 41001,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0037,
+          "scored_seconds": 6.6,
+          "lateral_m": -0.0033,
+          "min_height_m": 0.2534
+        },
+        {
+          "episode": 3,
+          "seed": 41002,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0023,
+          "scored_seconds": 6.6,
+          "lateral_m": 0.0421,
+          "min_height_m": 0.2533
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": true,
+      "residual": "residual_020480.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41003,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0027,
+          "scored_seconds": 6.51,
+          "lateral_m": -0.2208,
+          "min_height_m": 0.2526
+        },
+        {
+          "episode": 2,
+          "seed": 41004,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.001,
+          "scored_seconds": 6.52,
+          "lateral_m": -0.292,
+          "min_height_m": 0.2509
+        },
+        {
+          "episode": 3,
+          "seed": 41005,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0006,
+          "scored_seconds": 6.51,
+          "lateral_m": -0.2474,
+          "min_height_m": 0.2512
+        }
+      ]
+    },
+    {
+      "preferred_speed_mps": 0.6,
+      "warmup_walk": true,
+      "residual": "residual_061440.npz",
+      "kp": 45.0,
+      "kd": 1.0,
+      "frequency_hz": 3.0,
+      "successes": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "seed": 41003,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0018,
+          "scored_seconds": 6.42,
+          "lateral_m": -0.3296,
+          "min_height_m": 0.2516
+        },
+        {
+          "episode": 2,
+          "seed": 41004,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0034,
+          "scored_seconds": 6.44,
+          "lateral_m": -0.3994,
+          "min_height_m": 0.2501
+        },
+        {
+          "episode": 3,
+          "seed": 41005,
+          "success": true,
+          "fallen": false,
+          "distance_m": 3.0045,
+          "scored_seconds": 6.43,
+          "lateral_m": -0.3511,
+          "min_height_m": 0.2503
+        }
+      ]
+    }
+  ]
+}
