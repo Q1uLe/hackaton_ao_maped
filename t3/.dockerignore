@@ -1,9 +1,0 @@
-.git
-.venv
-**/__pycache__
-*.tar
-*.tar.gz
-results
-tools
-training
-tests

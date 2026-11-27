@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_DIR = ROOT / "assets" / "unitree_go1"
+MODEL_DIR = ROOT.parent / "models"
 JOINT_NAMES = tuple(
     f"{leg}_{joint}_joint"
     for leg in ("FR", "FL", "RR", "RL")

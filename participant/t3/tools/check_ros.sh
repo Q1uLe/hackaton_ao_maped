@@ -2,7 +2,7 @@
 set -euo pipefail
 
 root=$(cd -- "$(dirname -- "$0")/.." && pwd)
-participant=${1:-go1-t3:local}
+participant=${1:-go1-participant:local}
 simulator=${SIM_IMAGE:-registry.cookcloud.ru/go1-hackathon-remote-stage/go1-sim:v1.0}
 episodes=${EPISODES:-1}
 factor=${SIM_REALTIME_FACTOR:-1}
@@ -32,7 +32,7 @@ for ((episode=1; episode<=episodes; episode++)); do
     result=0
     docker run --name "${tag}-driver" "${network[@]}" --entrypoint /bin/bash \
         -v "$root/tools/ros_check.py:/check/ros_check.py:ro" "$participant" -c \
-        'source /opt/ros/humble/setup.bash; source /opt/unitree/install/local_setup.bash; export PYTHONPATH="/opt/go1-t3:$PYTHONPATH"; exec python3 /check/ros_check.py --speed "$1" --wall-limit "$2"' \
+        'source /opt/ros/humble/setup.bash; source /opt/participant/ros2_ws/install/setup.bash; export PYTHONPATH="/opt/participant/t3:${PYTHONPATH:-}"; exec python3 /check/ros_check.py --speed "$1" --wall-limit "$2"' \
         _ "$speed" "$wall_limit" || result=$?
     if ((result != 0)); then
         docker logs --tail 30 "${tag}-participant" >&2

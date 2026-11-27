@@ -10,31 +10,31 @@
 
 ```bash
 git clone --branch t3 https://github.com/Q1uLe/hackaton_ao_maped.git
-cd hackaton_ao_maped/t3
+cd hackaton_ao_maped/participant/t3
 ```
 
 Дальнейшие команды запускайте из этого каталога.
 
 ```bash
 REV=$(git rev-parse HEAD)
-docker buildx build --platform linux/amd64 --label "org.opencontainers.image.revision=$REV" --load -t go1-t3:local .
-docker run --rm --network none go1-t3:local ping
+docker buildx build --platform linux/amd64 --label "org.opencontainers.image.revision=$REV" --load -t go1-participant:local ..
+docker run --rm --network none go1-participant:local ping
 ```
 
-`ping` возвращает один JSON-объект из [submission.json](submission.json). Judge запускает образ с аргументом `T3` и передаёт параметры DDS через окружение. Образ запускается с UID 10001 и содержит зависимости, модель и веса.
+`ping` возвращает один JSON-объект из [submission.json](submission.json). Judge запускает образ с аргументом `T3` и передаёт параметры DDS через окружение. Общий образ из `participant/Dockerfile` поддерживает T2, T3 и T4, запускается от пользователя `participant` и использует сообщения ROS 2 из общего рабочего пространства.
 
-После сборки образ можно перенести на другой компьютер. Сохраните его командой `docker save -o go1-t3-linux-amd64.tar go1-t3:local`, затем загрузите архив на целевой машине командой `docker load -i go1-t3-linux-amd64.tar`. Исходники, веса и модель для сборки входят в ветку.
+После сборки образ можно перенести на другой компьютер. Сохраните его командой `docker save -o go1-t3-linux-amd64.tar go1-participant:local`, затем загрузите архив на целевой машине командой `docker load -i go1-t3-linux-amd64.tar`. Исходники, веса и модель для сборки входят в ветку.
 
 Запускайте локальную проверку с публичным Simulator на Linux.
 
 ```bash
 docker pull registry.cookcloud.ru/go1-hackathon-remote-stage/go1-sim:v1.0
-EPISODES=10 bash tools/check_ros.sh go1-t3:local
+EPISODES=10 bash tools/check_ros.sh go1-participant:local
 ```
 
 Скрипт пересоздаёт контейнеры Simulator и Participant для каждого эпизода. Он использует `/odom/ground_truth` публичного симулятора для измерения расстояния и падений. Узлы участника подписаны только на команду скорости, телеметрию суставов и IMU, `/clock` и `/lowcmd_bare`.
 
-При программной эмуляции QEMU используйте `SIM_REALTIME_FACTOR=0.1 WALL_LIMIT=240 bash tools/check_ros.sh go1-t3:local`. Параметр замедляет привязку цикла MuJoCo к реальному времени, сохраняя шаг физики и настройки контроллера. В таком прогоне новый образ прошёл 3,003 м за 6,228 с симуляции без падения. Средняя частота `/lowcmd` составила 90,24 Гц, боковое смещение составило 0,469 м. В штатном темпе предыдущего прогона под QEMU частота сообщений упала ниже 50 Гц. [Новый прогон ROS 2](results/ppo-finetune-8h/ros-container.json) · [Результаты первой версии](results/t3-ros.json)
+При программной эмуляции QEMU используйте `SIM_REALTIME_FACTOR=0.1 WALL_LIMIT=240 bash tools/check_ros.sh go1-participant:local`. Параметр замедляет привязку цикла MuJoCo к реальному времени, сохраняя шаг физики и настройки контроллера. В сохранённом прогоне до интеграции отдельный образ T3 прошёл 3,003 м за 6,228 с симуляции без падения. Средняя частота `/lowcmd` составила 90,24 Гц, боковое смещение составило 0,469 м. В штатном темпе предыдущего прогона под QEMU частота сообщений упала ниже 50 Гц. [Новый прогон ROS 2](results/ppo-finetune-8h/ros-container.json) · [Результаты первой версии](results/t3-ros.json)
 
 ## Воспроизвести проверку физики
 
@@ -46,7 +46,7 @@ python -m unittest discover -s tests -v
 OPENBLAS_NUM_THREADS=1 python -m tools.evaluate --episodes 10 --output training/runs/local-check.json
 ```
 
-Для той же проверки в Windows PowerShell выполните команды из `t3/`.
+Для той же проверки в Windows PowerShell выполните команды из `participant/t3/`.
 
 ```powershell
 py -m venv .venv
@@ -103,7 +103,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m training.lo
 
 ## Опубликовать решение
 
-Соберите и проверьте `go1-t3:local` из чистого checkout ветки `t3` по командам выше. Затем загрузите этот образ под тегом T3 в проект команды в Harbor. Учётные данные вводите при `docker login`.
+Соберите и проверьте `go1-participant:local` из чистого checkout ветки `t3` по командам выше. Затем загрузите этот образ под тегом T3 в проект команды в Harbor. Учётные данные вводите при `docker login`.
 
 ```bash
 REV=$(git rev-parse HEAD)
@@ -111,13 +111,13 @@ read -r -p 'Имя проекта и репозитория команды в Ha
 IMAGE_REPO="registry.cookcloud.ru/${TEAM_NAME}/${TEAM_NAME}"
 IMAGE="${IMAGE_REPO}:t3-${REV:0:12}"
 docker login registry.cookcloud.ru
-docker image inspect go1-t3:local --format '{{index .Config.Labels "org.opencontainers.image.revision"}}'
+docker image inspect go1-participant:local --format '{{index .Config.Labels "org.opencontainers.image.revision"}}'
 ```
 
 Убедитесь, что `docker image inspect` напечатал тот же коммит, что и `git rev-parse HEAD`. Отправьте образ и получите digest из Harbor.
 
 ```bash
-docker tag go1-t3:local "$IMAGE"
+docker tag go1-participant:local "$IMAGE"
 docker push "$IMAGE"
 docker buildx imagetools inspect "$IMAGE"
 read -r -p 'Digest из Harbor (sha256:...): ' DIGEST
