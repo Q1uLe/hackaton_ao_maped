@@ -3,7 +3,11 @@
     <RecoveryNode number_of_retries="6" name="NavigateWithReplanning">
       <PipelineSequence name="PlanAndFollow">
         <RateController hz="1.0">
-          <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+          <Fallback name="SelectGlobalPlanner">
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased"/>
+            <!-- NavFn can replan when the global costmap marks the robot's current cell occupied. -->
+            <ComputePathToPose goal="{goal}" path="{path}" planner_id="NavFn"/>
+          </Fallback>
         </RateController>
         <FollowPath path="{path}" controller_id="FollowPath" goal_checker_id="goal_checker"/>
       </PipelineSequence>
